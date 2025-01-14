@@ -22,3 +22,7 @@ header img{
     margin: 70px 0 0 0;
     padding: 0 5px;
 }
+
+.conter-form input{
+    width: 50%;
+}
