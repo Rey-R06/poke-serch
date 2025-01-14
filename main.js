@@ -28,13 +28,13 @@ let namePokemon = document.getElementById("input").value.trim().toLowerCase();
         } else{
             contenedorHtml.style.visibility = "visible";
             contenedorHtml.style.height = "150px"
-            contenedorHtml.innerHTML = `<button onclick="quitar()">X</button><p>ingrese un nombre.</p>`;
+            contenedorHtml.innerHTML = `<button onclick="quitar()" translate="no">X</button><p>ingrese un nombre.</p>`;
         }
     }catch(error2){
         console.log("pokemon no encontrado");
         contenedorHtml.style.visibility = "visible";
         contenedorHtml.style.height = "150px"
-        contenedorHtml.innerHTML = `<button onclick="quitar()">X</button><p>Pokémon no encontrado.</p>`;
+        contenedorHtml.innerHTML = `<button onclick="quitar()" translate="no">X</button><p>Pokémon no encontrado.</p>`;
 
         console.log(error2)//muestra si hay algun error  
     }
@@ -47,7 +47,7 @@ function mostrarPokemon(name, img) {
     contenedorHtml.style.visibility = "visible";
     let contenedor = document.createElement("div");
     contenedorHtml.classList.add("contenedorPokemon");
-    contenedor.innerHTML = `<button onclick="quitar()">X</button><h2>${name.toUpperCase()}</h2><img src="${img}" width="400">  `;
+    contenedor.innerHTML = `<button onclick="quitar()" translate="no">X</button><h2>${name.toUpperCase()}</h2><img src="${img}" width="400">  `;
     
     contenedorHtml.appendChild(contenedor);
 }
