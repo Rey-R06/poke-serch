@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url('ruta/a/pokemon-solid.ttf') format('truetype');
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 
+      auto 1fr auto;
+    min-height: 100dvh;
+    font-family: 'PokemonSolid', sans-serif;
+}
+
+header, footer{
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.897);
+    height: 200px;
+}
+
+header img{
+    margin: 20px 20px 0 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.conter-form{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(0, 106, 206);
+    border-radius: 10px;
+    margin: 0 25px 0 25px;
+    width: 350px;
+    height: 150px;
+}
+
+.conter-form h2{
+    margin: 15px 0 5px 0;
+    font-size: 1.7rem;
+}
+
+.conter-form label{
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.conter-form input{
+    margin-top: 13px;
+    height: 20px;
+    width: 70%;
+}
+
+.conter-form button{
+    margin: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 106, 206);
+    background-color: white;
+}
+
+.conterInput{
+    display: flex;
+}
+
+.contenedor{
+    visibility: hidden;
+    width: 400px;
+    color:white;
+    margin: 0 20px;
+    position: absolute;
+    border: 5px solid rgb(0, 106, 206);
+    background: linear-gradient(
+        to bottom,
+        red 60%,   /* Parte superior roja */
+        black 75%, /* Línea negra delgada */
+        white 5%  /* Parte inferior blanca */
+    );
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenedor h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.contenedor button{
+    font-size: 3rem;
+    position: absolute;
+    background: transparent;
+    border: none;
+    right: 5px;
+    top: 5px;
+}
+
+.contenedor p{
+    font-size: 2rem;
+    margin: 60px 0 0 0;
+    padding: 0 10px;
+}
+
+
